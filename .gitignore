@@ -1,0 +1,47 @@
+/venv
+/logs
+# Byte-compiled / cached files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+*.env
+Pipfile
+Pipfile.lock
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and local database files
+logs/
+*.log
+*.db
+*.sqlite
+
+# dbt-specific ignore files
+target/
+dbt_packages/
+dbt_modules/
+manifest.json
+run_results.json
+catalog.json
+logs/
+dbt_project.yml.lock
+
+# Environment-specific config
+profiles.yml
+secrets.env
+
+# MacOS & Windows system files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.iml
+
