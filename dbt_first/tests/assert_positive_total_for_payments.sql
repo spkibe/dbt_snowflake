@@ -1,6 +1,6 @@
-select
-    order_id
-    sum(amount) as total_amount
-from {{ ref('stg_payments') }}
-group by 1
-having not(total_amount >= 0)
+SELECT 
+    order_id,
+    SUM(amount) AS total_amount
+FROM {{ ref('stg_payments') }}
+GROUP BY 1
+HAVING total_amount < 0
